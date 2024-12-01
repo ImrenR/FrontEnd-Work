@@ -1,20 +1,22 @@
 //-- JS FUNCTION ASSIGNMENT ---
 
-// 1. Soru : SAyinin tek mi cift mi oldugunu bulma
+//Question 1: Find even and odd numbers
+
 
 function number(n) {
-  return n % 2 === 0 ? "Sayi Cifttir" : "Sayi Tektir";
+  return n % 2 === 0 ? "Even numbers" : "Odd numbers";
 }
 console.log(number(10));
 console.log(number(5));
 
-// 2. Soru : 5 in kati midir ?
+// Question 2: 5 in kati midir ?
 
 function numberBes(n) {
   return n % 5 === 0 ? "Sayi 5 in katidir" : "Sayi 5 in Kati degildir";
 }
 console.log(numberBes(1235));
 console.log(numberBes(12934589));
+
 //3. Soru : Pozitif mi negatif mi
 
 function negPoz(n) {
@@ -26,13 +28,16 @@ function negPoz(n) {
 
 negPoz(-90);
 negPoz(34);
+
 //4. Soru : Girilen sayiyi mutlak degere cevirme
+
 //!number = Math.abs(number) sayiyi mutlak sayiya cevirir
 function mutlakSayi(n) {
   n = Math.abs(n);
   return n;
 }
 console.log(mutlakSayi(-45));
+
 //5. Soru : Bir sayinin karesini alma
 
 function kareAlma(n) {

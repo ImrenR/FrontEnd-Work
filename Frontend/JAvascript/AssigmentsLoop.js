@@ -1,5 +1,6 @@
 //----- JS LOOPS -----
-//1. Soru : 1 den N ye kadar olan sayilarin toplami (use for) //
+//Question 1 : Sum of the numbers From 1 till N (use for)
+
 
 function sumUpToN(n) {
   let sum = 0;
@@ -11,7 +12,8 @@ function sumUpToN(n) {
 }
 console.log(sumUpToN(10)); 
 
-//2. Soru : N faktoriyelini hesaplama (for) 
+//Question 2: Calculate N factorial ( use for)
+
 
 function factorial(n) {
   let result = 1 ;
@@ -22,7 +24,8 @@ return result;
 }
 console.log(factorial(5));
 
-// 3. Soru : 1 den N ye kadar olan sayilardan cift olanlarin sayisini bulma
+// Question 3 : Find the even numbers from 1 till N 
+
 
 function ciftSayilar(n){
   let count = 0
@@ -35,9 +38,11 @@ function ciftSayilar(n){
 }
 console.log(ciftSayilar(10));
 
-//4. Soru : Kullanicinin girdigi N sayisina kadar Asal SAyilari bulma(for)
+//Question 4: Find prime numbers till N which was input by user
 
-// 5. Soru : N e kadar olan sayilardan 3 e tam bolunebilenlerin toplami 
+
+// Question 5 : The sum of the numbers up to N that are divisible by 3 
+
 
 function bolme(n){
   let sum = 0
@@ -51,7 +56,7 @@ function bolme(n){
 }
 console.log(bolme(10))
 
-// 7. Soru : Kullanicinin girdigi sayiya kadar ( start) 5 ile bolunebilen sayilari bulma(for)
+// Question 7 : Find of the numbers up to N which are divisible by 5 (use for)
 
 function divideIT(n){
   for(let i =1; i<=n; i++){
@@ -61,7 +66,8 @@ function divideIT(n){
   }
 }
 divideIT(20);
-// 8. Soru : N sayisina kadar 1 den N e kadar olan sayilarin Karesinin toplami 
+
+// Question 8: Sum of numbers up to N till 1 that are square of them
 
 function kareTop(n){
 let sum = 0
@@ -72,10 +78,12 @@ return sum
 }
 console.log(kareTop(3));
 
-// 9. Soru : Kullanicinin Girdigi sayiya kadar FizzBuzz(for)
-//! FizzBuzz : 3 e ve 5 e bolunen sayilar//
-//! Buzz : sadece 5 e bolunen sayilar //
-//! Fizz : 3 e bolunen sayilar //
+// Question 9: Find the FizzBuzz Up to the numbers that user inputted(use for)
+
+//! FizzBuzz : numbers are divisible by both 3 and 5 //
+//! Buzz : Numbers only divisible by 3 //
+//! Fizz : Numbers only divisible by 5//
+
 function fizzBuzz(n){
   for(let i =1; i<=n; i++){
     if (i % 3 === 0 && i % 5 === 0){
@@ -90,6 +98,7 @@ function fizzBuzz(n){
   }
 }
 }
-fizzBuzz(15);
-// 10. Soru : Kullanicidan 1 ile 10 arasinda bir sayi alarak tahmin oyunu oynamasi ( do while)
+fizzBuzz(15); 
+// Question 10: By getting a number between 1 and 10 playing a guessing game (use do while)
+ 
 
