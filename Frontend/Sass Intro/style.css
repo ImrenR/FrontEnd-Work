@@ -132,8 +132,8 @@ header ul a:hover {
   align-items: center;
 }
 
-/* ARTICLES - EXTEND */
-/* --------------*/
+/* ARTICLES - EXTEND    */
+/* ---------------------*/
 .articles {
   display: flex;
   padding: 1rem;
@@ -164,26 +164,39 @@ footer p {
   align-items: center;
   background-color: orange;
 }
-footer .social-icons {
+
+.social-icons {
   display: flex;
   height: 10rem;
 }
-footer .social-icons .social1 {
+.social-icons .sociali {
   width: 20%;
-  background-color: blue;
+  background-color: rgb(25.5, 25.5, 255);
   font-size: 1rem;
   color: yellow;
 }
-footer .social-icons .social2 {
+.social-icons .sociali {
   width: 20%;
-  background-color: blue;
-  font-size: 1rem;
+  background-color: #3333ff;
+  font-size: 2rem;
   color: yellow;
 }
-footer .social-icons .social3 {
+.social-icons .sociali {
   width: 20%;
-  background-color: blue;
-  font-size: 1rem;
+  background-color: rgb(76.5, 76.5, 255);
+  font-size: 3rem;
+  color: yellow;
+}
+.social-icons .sociali {
+  width: 20%;
+  background-color: #6666ff;
+  font-size: 4rem;
+  color: yellow;
+}
+.social-icons .sociali {
+  width: 20%;
+  background-color: rgb(127.5, 127.5, 255);
+  font-size: 5rem;
   color: yellow;
 }
 

@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 // variable declaration //
 
 $bg-color: #bb36bb;
-$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $font-size: 1.2rem;
 $font-color: black;
 $nav-bg-color: #007bff;
@@ -16,57 +16,56 @@ $banner-bg-color: #0056b3;
 $button-bg-color: #28a745;
 $lightColor: #f8f9fa;
 
-
-body{
- background-color: $bg-color;
- font-family: $font-family;
- font-size: $font-size;
- color:$font-color;
+body {
+  background-color: $bg-color;
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $font-color;
 }
 
 /* -------------- */
 /*     HEADER     */
 /* --------------- */
 
-header{
+header {
   background-color: $nav-bg-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 
-   img{
+  img {
     width: 80px;
     border: $my-border;
     padding: 5px;
     border-radius: 10px;
     border: 2px solid #f8f9fa;
-   }
-    ul{
-      list-style-type: none;
+  }
+  ul {
+    list-style-type: none;
 
-       li{
-        display: inline-block;
-        padding: 0.5rem;
-        &:hover{
-          text-decoration: underline;
-        }
-       }
-       a{
-        color: white;
-        text-decoration: none;
-        &:hover{
-          color: $font-color;
-        }
-       }
+    li {
+      display: inline-block;
+      padding: 0.5rem;
+      &:hover {
+        text-decoration: underline;
+      }
     }
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: $font-color;
+      }
+    }
+  }
 }
 
 /* ------------ */
 /*    BANNER    */
 /* ------------ */
 
-.banner{
+.banner {
   background-color: $banner-bg-color;
   display: flex;
   justify-content: space-between;
@@ -74,13 +73,13 @@ header{
   padding: 2rem;
   color: white;
   line-height: 1.5;
-  img{
+  img {
     width: 30%;
     max-width: 400px;
     min-width: 250px;
   }
-  aside{
-    button{
+  aside {
+    button {
       background-color: $button-bg-color;
       width: 200px;
       height: 45px;
@@ -90,12 +89,11 @@ header{
       border-radius: 5px;
       font-weight: bold;
       &:hover {
-       background-color: darken($button-bg-color, 10%);
-       cursor: pointer;
-       transform: scale(0.97);
+        background-color: darken($button-bg-color, 10%);
+        cursor: pointer;
+        transform: scale(0.97);
       }
-  
-    } 
+    }
   }
 }
 
@@ -103,7 +101,7 @@ header{
 /*      CARDS  - MIXIN      */
 /* ----------------------- */
 
-@mixin myBox ($parametre1, $parametre2:blue){
+@mixin myBox($parametre1, $parametre2: blue) {
   background-color: $parametre1;
   width: 25%;
   height: 15rem;
@@ -112,53 +110,49 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-
-.cards{
+.cards {
   display: flex;
   gap: 1rem;
   padding: 1rem;
 }
 
-.card1{
-  @include myBox(green, white)
+.card1 {
+  @include myBox(green, white);
+}
+.card2 {
+  @include myBox(red);
+}
+.card3 {
+  @include myBox(yellow, blue);
+}
+.card4 {
+  @include myBox(maroon, skyblue);
+}
 
-}
-.card2{
-  @include myBox(red)
-}
-.card3{
-  @include myBox(yellow,blue)
-}
-.card4{
-  @include myBox(maroon,skyblue)
-}
-
-//* ---------------*/
-/* ARTICLES - EXTEND */
-/* --------------*/
-.articles{
+//* -------------------- */
+/* ARTICLES - EXTEND    */
+/* ---------------------*/
+.articles {
   display: flex;
   padding: 1rem;
   gap: 1rem;
 }
 
-.article1{
- background-color: gray;
- width: 50% ;
- height: 10rem;
- border-radius: 1rem;
- display: flex;
- justify-content: center;
- align-items: center;
+.article1 {
+  background-color: gray;
+  width: 50%;
+  height: 10rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.article2{
-
-@extend .article1;
-background-color: yellow;
-color:blue;
+.article2 {
+  @extend .article1;
+  background-color: yellow;
+  color: blue;
 }
 
 /*---------- */
@@ -167,32 +161,31 @@ color:blue;
 footer {
   $dark: 1;
 
-  p{
+  p {
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-   @if  $dark==1 {
-    background-color: orange;
-   } @else if $dark==2 {
-    background-color: maroon;
-   } @else {
-    background-color: olive;
-   } 
-  }
-}
-  .social-icons{
-    display: flex;
-    height: 10rem;
-    $textColor:red, maroon, blue, pink, green;
-
-    @for $i from 1 through 5 {
-      .social#{$i}{
-        width: 20%;
-        background-color: lighten(blue, $i * 5);
-        font-size: 1rem * $i;
-        color: yellow;
-      }
+    @if $dark==1 {
+      background-color: orange;
+    } @else if $dark==2 {
+      background-color: maroon;
+    } @else {
+      background-color: olive;
     }
   }
+}
+.social-icons {
+  display: flex;
+  height: 10rem;
+
+  @for $i from 1 through 5 {
+    .social#{i} {
+      width: 20%;
+      background-color: lighten(blue, $i * 5);
+      font-size: 1rem * $i;
+      color: yellow;
+    }
+  }
+}
