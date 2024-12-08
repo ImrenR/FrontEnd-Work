@@ -19,14 +19,14 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
 
 body {
-  font-family: $font-family;
-  background-color:$primary-color;
+  font-family: variables.$font-family;
+  background-color:variables.$primary-color;
   height: 100hv;
   line-height: 1;
-  color: $text-color;
+  color: variables.$text-color;
 }
 a {
-  color: $text-color;
+  color: variables.$text-color;
   text-decoration: none;
 }
 h1,

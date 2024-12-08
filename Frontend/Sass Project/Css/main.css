@@ -1,33 +1,325 @@
-/* Error: Undefined mixin.
- *    ,
- * 71 | / @include mixins.edia-lg{
- * 72 | |   .nav {
- * 73 | |     &__item {
- * 74 | |       padding-right: 1.5rem;
- * 75 | |     }
- * 76 | |     .nav__link {
- * 77 | |       font-size: 1.5rem;
- * 78 | |     }
- * 79 | |   }
- * 80 | | 
- * 81 | |   .projects__item {
- * 82 | |     width: 50%;
- * 83 | |   }
- * 84 | |   .contact__list {
- * 85 | |     flex-direction: row;
- * 86 | |   }
- * 87 | \ }
- *    '
- *   scss/components/_responsive.scss 71:1  @use
- *   scss/main.scss 17:1                    root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 71 \2502  \250c  @include mixins.edia-lg{\a 72 \2502  \2502    .nav {\a 73 \2502  \2502      &__item {\a 74 \2502  \2502        padding-right: 1.5rem;\a 75 \2502  \2502      }\a 76 \2502  \2502      .nav__link {\a 77 \2502  \2502        font-size: 1.5rem;\a 78 \2502  \2502      }\a 79 \2502  \2502    }\a 80 \2502  \2502  \a 81 \2502  \2502    .projects__item {\a 82 \2502  \2502      width: 50%;\a 83 \2502  \2502    }\a 84 \2502  \2502    .contact__list {\a 85 \2502  \2502      flex-direction: row;\a 86 \2502  \2502    }\a 87 \2502  \2514  }\a    \2575 \a   scss/components/_responsive.scss 71:1  @use\a   scss/main.scss 17:1                    root stylesheet";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.about-bgImg-container {
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/project-1.jpg");
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-bgImg-container .about__bio-image {
+  text-align: center;
+}
+.about-bgImg-container .about__bio-image h2 {
+  font-size: 3rem;
+  color: #ff652f;
+}
+.about-bgImg-container .about__bio-image p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 1.5rem;
+}
+
+.about {
+  width: 70%;
+  margin: 2rem auto;
+}
+.about .about__job {
+  margin: 1rem;
+  background-color: rgb(64.5, 64.5, 64.5);
+  padding: 1rem;
+  border-bottom: 5px solid #ff652f;
+  border-radius: 5px;
+}
+.about .about__job h2,
+.about .about__job h3 {
+  margin: 0.5rem 0;
+}
+.about .about__job h6 {
+  margin: 0.3rem 0;
+}
+
+.contact-bgImg-container {
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/model-1.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.contact-bgImg-container .nav {
+  height: 40vh;
+}
+
+.contact {
+  height: 40hv;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  align-items: center;
+  gap: 2rem;
+}
+.contact__list .text-secondary {
+  color: #ff652f;
+}
+
+.home-bgImg-container {
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/model-1.jpg");
+  height: 100hv;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home__name {
+  font-size: 5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+}
+.home__name--last {
+  color: red;
+  font-weight: 700;
+}
+
+.project-bgImg-container {
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/project-6.jpg");
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-bgImg-container .projects__bio-image {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.projects__items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 5rem;
+  gap: 1rem 0;
+}
+.projects__item {
+  width: 33%;
+  cursor: pointer;
+  border-bottom: 5px solid #ff652f;
+  position: relative;
+}
+.projects__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects__item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ff652f;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all sec;
+}
+.projects__item:hover::after {
+  opacity: 0.7;
+}
+
+.link-style a, footer.middle a, footer.vertical .social-icons a, footer.horizontal a {
+  padding: 0.4rem;
+  transition: all sec;
+}
+.link-style a:hover, footer.middle a:hover, footer.vertical .social-icons a:hover, footer.horizontal a:hover {
+  color: #ff652f;
+}
+
+footer.horizontal {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+footer.vertical {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+}
+footer.vertical .social-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 1rem;
+}
+footer.vertical .copyright {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  writing-mode: vertical-lr;
+}
+
+footer.middle {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav {
+  height: 100vh;
+  padding: 2rem;
+}
+.nav__list {
+  text-align: right;
+  list-style-type: none;
+}
+.nav__item {
+  display: inline;
+  padding: 1rem;
+}
+.nav__link {
+  text-decoration: none;
+  font-size: 1.3 rem;
+  font-family: 'Segoe UI", Tahoma, Geneva, Verdana, sans-serif';
+  font-weight: 500;
+  transition: all sec;
+}
+.nav__link:hover {
+  color: blue;
+}
+.nav__link--active {
+  color: #ff652f;
+}
+
+@media screen and (min-width: 0px) {
+  .nav {
+    padding: 0.5rem;
+  }
+  .nav__list {
+    text-align: center;
+  }
+  .nav__item {
+    padding-right: 0.7rem;
+  }
+  .nav .nav__link {
+    font-size: 0.9rem;
+  }
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .contact__list {
+    gap: 2rem 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .nav {
+    padding: 0.7rem;
+  }
+  .nav__list {
+    text-align: right;
+  }
+  .nav__item {
+    padding-right: 1rem;
+  }
+  .nav .nav__link {
+    font-size: 1rem;
+  }
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact__list {
+    gap: 2.5rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__item {
+    padding-right: 1.3rem;
+  }
+  .nav .nav__link {
+    font-size: 1.3rem;
+  }
+  .projects__item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav__item {
+    padding-right: 1.5rem;
+  }
+  .nav .nav__link {
+    font-size: 1.5rem;
+  }
+  .projects__item {
+    width: 50%;
+  }
+  .contact__list {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .projects__item {
+    width: 33%;
+  }
+}
+body {
+  font-family: 'Segoe UI", Tahoma, Geneva, Verdana, sans-serif';
+  background-color: #272727;
+  height: 100hv;
+  line-height: 1;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=main.css.map */
