@@ -6,3 +6,20 @@
 @import "./components/footer", "./components/nav", "./components/responsive";
 // pages//
 @import "./pages/about", "./pages/contact", "./pages/home", "./pages/projects";
+
+body {
+  font-family: $font-family;
+  background-color: $primary-color;
+  height: 100hv;
+  line-height: 1;
+  color: $text-color;
+}
+a {
+  color: $secondary-color;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
