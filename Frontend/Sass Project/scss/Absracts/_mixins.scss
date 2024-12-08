@@ -2,13 +2,13 @@
   transition: all sec;
 }
 
-@mixin bgImg($height) {
+@mixin bgImg($height, $path) {
   background: linear-gradient(
       to right,
       rgba($primary-color, 0.9),
       rgba($primary-color, 0.3)
     ),
-    url(../../images/model-1.jpg);
+    url($path);
   height: $height;
   width: 100%;
   background-size: cover;

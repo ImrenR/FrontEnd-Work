@@ -1,20 +1,36 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.nav {
-  border: 2px solid red;
+.link-style a, footer.horizontal a {
+  padding: 0.4rem;
+  transition: all sec;
+}
+.link-style a:hover, footer.horizontal a:hover {
+  color: #ff652f;
+}
+
+footer.horizontal {
   height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.nav {
+  height: 100vh;
   padding: 2rem;
 }
 .nav__list {
-  list-style-type: none;
   text-align: right;
+  list-style-type: none;
 }
 .nav__item {
-  display: inline-block;
+  display: inline;
   padding: 1rem;
 }
 .nav__link {
@@ -32,11 +48,31 @@
 }
 
 .home-bgImg-container {
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../../images/model-1.jpg);
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/model-1.jpg");
   height: 100hv;
   width: 100%;
   background-size: cover;
   background-position: center;
+}
+
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home__name {
+  font-size: 5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+}
+.home__name--last {
+  color: red;
+  font-weight: 700;
 }
 
 body {

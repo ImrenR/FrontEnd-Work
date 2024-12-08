@@ -1,14 +1,13 @@
 .nav {
-  border: 2px solid red;
-  height: 10vh;
+  height: 100vh;
   padding: 2rem;
 
   &__list {
-    list-style-type: none;
     text-align: right;
+    list-style-type: none;
   }
   &__item {
-    display: inline-block;
+    display: inline;
     padding: 1rem;
   }
   &__link {

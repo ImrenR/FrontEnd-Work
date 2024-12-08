@@ -3,5 +3,24 @@
 //**********************
 
 .home-bgImg-container {
-  @include bgImg(100hv);
+  @include bgImg(100hv, $pathName1);
+}
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__name {
+    font-size: 5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid $text-color;
+    width: 100%;
+    &--last {
+      color: red;
+      font-weight: 700;
+    }
+  }
 }
