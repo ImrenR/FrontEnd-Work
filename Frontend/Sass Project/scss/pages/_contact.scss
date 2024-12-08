@@ -1,0 +1,36 @@
+@use '../Abstracts/mixins';
+@use '../Abstracts/variables';
+
+.contact-bgImg-container{
+  @include mixins.bgImg(100vh,variables.$pathName1);
+   .nav{
+    height: 40vh;
+   }
+}
+
+.contact{
+  //border: 2px solid red;
+  height: 40hv;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  &__list{
+  // border: 2px solid red;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   font-size: 1.5rem;
+   align-items: center;
+   gap: 2rem;
+
+    .text-secondary{
+      color: variables.$secondary-color;
+    }
+  }
+}

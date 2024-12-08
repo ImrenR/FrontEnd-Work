@@ -1,9 +1,11 @@
 //**********************
 //* HOME PAGE
 //**********************
+@use '../Abstracts/mixins';
+@use '../Abstracts/variables';
 
 .home-bgImg-container {
-  @include bgImg(100hv, $pathName1);
+  @include mixins.bgImg(100hv, variables.$pathName1);
 }
 .home {
   height: 80vh;
@@ -16,7 +18,7 @@
     font-size: 5rem;
     padding: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid $text-color;
+    border-bottom: 2px solid variables.$text-color;
     width: 100%;
     &--last {
       color: red;

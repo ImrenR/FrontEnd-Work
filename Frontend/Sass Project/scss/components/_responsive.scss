@@ -1,0 +1,93 @@
+
+
+@use '../Abstracts/mixins';
+@use '../Abstracts/variables';
+
+
+
+@include mixins.media-xsm {
+  .nav {
+    padding: 0.5rem;
+    &__list {
+      text-align: center;
+    }
+    &__item {
+      padding-right: 0.7rem;
+    }
+    .nav__link {
+      font-size: 0.9rem;
+    }
+  }
+  .contact {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    &__list {
+      gap: 2rem 1.2rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+@include mixins.media-sm {
+  .nav {
+    padding: 0.7rem;
+    &__list {
+      text-align: right;
+    }
+    &__item {
+      padding-right: 1rem;
+    }
+    .nav__link {
+      font-size: 1rem;
+    }
+  }
+  .contact {
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    &__list {
+      gap: 2.5rem 2rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@include mixins.media-md {
+  .nav {
+    &__item {
+      padding-right: 1.3rem;
+    }
+    .nav__link {
+      font-size: 1.3rem;
+    }
+  }
+  .projects__item {
+    width: 100%;
+  }
+}
+
+@include mixins.edia-lg{
+  .nav {
+    &__item {
+      padding-right: 1.5rem;
+    }
+    .nav__link {
+      font-size: 1.5rem;
+    }
+  }
+
+  .projects__item {
+    width: 50%;
+  }
+  .contact__list {
+    flex-direction: row;
+  }
+}
+
+@include mixins.media-xl {
+  .projects__item {
+    width: 33%;
+  }
+}

@@ -1,16 +1,26 @@
 // Abstract //
-@import "./Absracts/mixins", "./Absracts/variables";
+
+@use "./Abstracts/mixins";
+@use "./Abstracts/variables";
 // Base //
-@import "./base/reset";
-// Components //
-@import "./components/footer", "./components/nav", "./components/responsive";
+@use "./base/reset";
+
 // pages//
-@import "./pages/about", "./pages/contact", "./pages/home", "./pages/projects";
+@use "./pages/about";
+@use"./pages/contact";
+@use "./pages/home";
+@use "./pages/projects";
+
+// Components //
+@use "./components/footer";
+@use"./components/nav";
+@use "./components/responsive";
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
+
 body {
   font-family: $font-family;
-  background-color: $primary-color;
+  background-color:$primary-color;
   height: 100hv;
   line-height: 1;
   color: $text-color;
