@@ -1,0 +1,16 @@
+@mixin soft($sec) {
+  transition: all sec;
+}
+
+@mixin bgImg($height) {
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url(../../images/model-1.jpg);
+  height: $height;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
