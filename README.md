@@ -1,4 +1,4 @@
-# Frontend Work Repo: Web Essentials Prep
+# Frontend Work : Web Essentials Prep
 ---
 
 ## HTML (HyperText Markup Language)
